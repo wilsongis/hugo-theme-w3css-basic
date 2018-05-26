@@ -37,4 +37,13 @@
   {{- if or $.Site.Params.debug (findRE `\bhtml-comment\b` $.Site.Params.traceFlags) }}
     {{ `<!-- back in partials/head.html  -->` | safeHTML }}
   {{- end}}
+
+  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+<link href="https://twitter.com/wilsongis" rel="me">
+<link href="https://github.com/wilsongis" rel="me">
+<link href="https://micro.blog/wilsongis" rel="me">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+<link rel="micropub" href="https://minimalworkflow.com/nanopub.php" />
+
 </head>
