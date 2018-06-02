@@ -38,7 +38,7 @@ This theme is for:
     * [Features](#features)
     * [Recent Posts](#recent-posts)
     * [See More](#see-more)
-    * [Testimonials](#testimonials)
+    * [quotes](#quotes)
     * [Clients](#clients)
   * [Blog](#blog)
     * [Blog List](#blog-list)
@@ -192,7 +192,7 @@ headless-bundle, hugo-easy-gallery, i18n, image-processing, jumbotron,
 landing-page, leaf-bundle, marquee, menu, menutopbar, mobile,
 monochromatic-colors, navigation, page-bundles, page-resources, pages,
 pagination, photocards, privacy, responsive, search, see-more, submenu,
-taxonomy-bar, taxonomy-list, teaser-pictures, teasers, term-list, testimonials,
+taxonomy-bar, taxonomy-list, teaser-pictures, teasers, term-list, quotes,
 tracing
 
 
@@ -207,7 +207,7 @@ tracing
   * optional data/jumbotron    (carousel (if js is enabled) )
   * optional data/photocards   (optional css animation)
   * optional data/features     (optional css animation)
-  * optional data/testimonials (carousel (if js is enabled) )
+  * optional data/quotes (carousel (if js is enabled) )
   * optional data/clients      (carousel (if js is enabled) )
 * [Fontawesome](https://fontawesome.com/icons?d=gallery) version 5 (local)
 * [Google fonts](https://fonts.google.com/) - either via api (any font) or via local files (choose local to reduce tracking)
@@ -451,39 +451,39 @@ suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 }
 ```
 
-#### Testimonials
+#### quotes
 ```toml
-[params.testimonials]
-  # used in layouts/partials/front.testimonials.carousel.html
-  # enable or disable testimonials on frontpage
-  # see some examples in 'exampleSite/data/testimonials'
+[params.quotes]
+  # used in layouts/partials/front.quotes.carousel.html
+  # enable or disable quotes on frontpage
+  # see some examples in 'exampleSite/data/quotes'
   enable   = true
-  title    = "Testimonials"
+  title    = "quotes"
   subtitle = '''
 Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
 labore et dolore magna aliquyam erat, sed diam voluptua. 
              '''
 ```
 
-* Front testimonials
+* Front quotes
 
-![screenshot Testimonials](https://raw.githubusercontent.com/it-gro/hugo-theme-w3css-basic/master/images/snap_210.jpg)
+![screenshot quotes](https://raw.githubusercontent.com/it-gro/hugo-theme-w3css-basic/master/images/snap_210.jpg)
 
 ```
-data/testimonials/
-├── 01-testimonial.yaml
-├── 02-testimonial.yaml
-├── 03-testimonial.yaml
-├── 04-testimonial.yaml
-└── 05-testimonial.yaml
+data/quotes/
+├── 01-quote.yaml
+├── 02-quote.yaml
+├── 03-quote.yaml
+├── 04-quote.yaml
+└── 05-quote.yaml
 ```
 
-`01-testimonial.yaml`
+`01-quote.yaml`
 ```yaml
 weight:      1
 name:        "John Doe"
 position:    "CEO, Takimata"
-resImg:      "testimonials/pixabay.com/person-1.jpg"
+resImg:      "quotes/pixabay.com/person-1.jpg"
 text:        | 
   Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
   suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
@@ -863,9 +863,9 @@ You can configure all colors within the selected monochromatic color theme:
   colorFrontSeeMoreButton               = "w3-theme-l4"
   colorFrontSeeMoreContainer            = "w3-theme-l4"
   colorFrontSeeMoreText                 = "w3-text-white"
-  colorFrontTestimonialsCarouselCard    = "w3-theme-l5"
-  colorFrontTestimonialsContainer       = "w3-theme-l4"
-  colorFrontTestimonialsTitleCard       = "w3-theme-l2"
+  colorFrontquotesCarouselCard    = "w3-theme-l5"
+  colorFrontquotesContainer       = "w3-theme-l4"
+  colorFrontquotesTitleCard       = "w3-theme-l2"
   #
   # layouts/partials/page.nav.cards.html
   colorPageNavCardsCard                 = "w3-theme-d3"
@@ -1890,7 +1890,7 @@ content/resources/images/
 │   ├── gohugo.io
 │   ├── pixabay.com
 │   └── wikipedia.org
-└── testimonials
+└── quotes
     └── pixabay.com
 ```
 

@@ -1,6 +1,6 @@
 ---
 weight:      130
-title:       "testimonials (pixabay.com)"
+title:       "quotes (pixabay.com)"
 date:        2017-12-08T08:57:29+01:00
 resImgTeaser:   teaserpics/pixabay.com/pencil-1067670_640.jpg
 tags:
@@ -20,4 +20,4 @@ description: "License: Creative Commons CC0"
 ## Images
 {{< res-gallery-load-photoswipe >}}
 using shortcode: {{</* res-gallery match="photocards/pixabay.com/*" imgOpt="600x" thumbCmd="Resize" thumbOpt="200x" */>}} 
-{{< res-gallery match="testimonials/pixabay.com/*" imgOpt="600x" thumbCmd="Resize" thumbOpt="200x" >}} 
+{{< res-gallery match="quotes/pixabay.com/*" imgOpt="600x" thumbCmd="Resize" thumbOpt="200x" >}} 

@@ -346,9 +346,9 @@ consectetuer adipiscing
   colorFrontSeeMoreButton               = "w3-theme-l4"
   colorFrontSeeMoreContainer            = "w3-theme-l4"
   colorFrontSeeMoreText                 = "w3-text-white"
-  colorFrontTestimonialsCarouselCard    = "w3-theme-l5"
-  colorFrontTestimonialsContainer       = "w3-theme-l4"
-  colorFrontTestimonialsTitleCard       = "w3-theme-l2"
+  colorFrontquotesCarouselCard    = "w3-theme-l5"
+  colorFrontquotesContainer       = "w3-theme-l4"
+  colorFrontquotesTitleCard       = "w3-theme-l2"
   #
   # layouts/partials/page.nav.cards.html
   colorPageNavCardsCard                 = "w3-theme-d3"
@@ -691,13 +691,13 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
 suscipit lobortis nisl ut aliquip ex ea commodo consequat.
               '''
 
-[params.testimonials]
-  # used in layouts/partials/front.testimonials.carousel.html
-  # enable or disable testimonials on frontpage
-  # see some examples in 'exampleSite/data/testimonials'
+[params.quotes]
+  # used in layouts/partials/front.quotes.carousel.html
+  # enable or disable quotes on frontpage
+  # see some examples in 'exampleSite/data/quotes'
   enable   = true
   #enable  = false
-  title    = "Testimonials"
+  title    = "quotes"
   subtitle = '''
 Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
 labore et dolore magna aliquyam erat, sed diam voluptua.

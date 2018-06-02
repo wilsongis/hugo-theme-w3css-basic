@@ -1,39 +1,39 @@
 {{- if or $.Site.Params.debug (findRE `\bhtml-comment\b` $.Site.Params.traceFlags) }}
-  {{ `<!-- partials/front.testimonials.carousel.html -->` | safeHTML }}
+  {{ `<!-- partials/front.quotes.carousel.html -->` | safeHTML }}
 {{- end}}
-{{- if isset $.Site.Params (lower `testimonials` ) }}
-{{- if $.Site.Params.testimonials.enable   }}
-{{- if gt (len .Site.Data.testimonials) 0 }}
-<section id="testimonials" class="w3-theme">
-  <div class='w3-container {{ default `w3-theme-l4` ($.Site.Param `colorFrontTestimonialsContainer`)}} '>
+{{- if isset $.Site.Params (lower `quotes` ) }}
+{{- if $.Site.Params.quotes.enable   }}
+{{- if gt (len .Site.Data.quotes) 0 }}
+<section id="quotes" class="w3-theme">
+  <div class='w3-container {{ default `w3-theme-l4` ($.Site.Param `colorFrontquotesContainer`)}} '>
 
-    <div class='w3-card-4 w3-center w3-round-xxlarge w3-margin-bottom {{ default `w3-theme-l2` ($.Site.Param `colorFrontTestimonialsTitleCard`)}} '>
-      <h2 id="testimonials-title">{{ $.Site.Params.testimonials.title }}</h2>
+    <div class='w3-card-4 w3-center w3-round-xxlarge w3-margin-bottom {{ default `w3-theme-l2` ($.Site.Param `colorFrontquotesTitleCard`)}} '>
+      <h2 id="quotes-title">{{ $.Site.Params.quotes.title }}</h2>
       <div class="w3-small">
-        {{- $.Site.Params.testimonials.subtitle | markdownify }}
+        {{- $.Site.Params.quotes.subtitle | markdownify }}
       </div>
     </div>   <!-- w3-card -->
 
-    <div class="testimonials-owl owl-carousel owl-theme w3-margin-bottom">
+    <div class="quotes-owl owl-carousel owl-theme w3-margin-bottom">
       {{- if or $.Site.Params.debug (findRE `\bhtml-comment\b` $.Site.Params.traceFlags) }}
-        {{ `<!-- range .Site.Data.testimonials -->` | safeHTML }}
+        {{ `<!-- range .Site.Data.quotes -->` | safeHTML }}
       {{- end}}
-      {{- range $index, $element := sort .Site.Data.testimonials `weight` }}
-      <div class='w3-card {{ default `w3-theme-l5` ($.Site.Param `colorFrontTestimonialsCarouselCard`)}} '>
-        {{ template `front-testimonials-entry` (dict `page` $.Page `element` $element) }}
+      {{- range $index, $element := sort .Site.Data.quotes `weight` }}
+      <div class='w3-card {{ default `w3-theme-l5` ($.Site.Param `colorFrontquotesCarouselCard`)}} '>
+        {{ template `front-quotes-entry` (dict `page` $.Page `element` $element) }}
       </div>       <!-- w3-card -->
       {{- end }} {{/* range */}}
-    </div> <!-- testimonials-owl -->
+    </div> <!-- quotes-owl -->
 
     <noscript>
       <div class="w3-cell-row">
       {{- if or $.Site.Params.debug (findRE `\bhtml-comment\b` $.Site.Params.traceFlags) }}
-        {{ `<!-- range first 3 .Site.Data.testimonials -->` | safeHTML }}
+        {{ `<!-- range first 3 .Site.Data.quotes -->` | safeHTML }}
       {{- end}}
-        {{- range $index, $element := first 3 (sort .Site.Data.testimonials `weight`) }}
+        {{- range $index, $element := first 3 (sort .Site.Data.quotes `weight`) }}
           <div class="w3-cell w3-cell-bottom w3-mobile">
-            <div class='w3-card w3-margin {{ default `w3-theme-l5` ($.Site.Param `colorFrontTestimonialsCarouselCard`)}} '>
-                {{ template `front-testimonials-entry` (dict `page` $.Page `element` $element) }}
+            <div class='w3-card w3-margin {{ default `w3-theme-l5` ($.Site.Param `colorFrontquotesCarouselCard`)}} '>
+                {{ template `front-quotes-entry` (dict `page` $.Page `element` $element) }}
             </div>
           </div>
         {{- end }} {{/* range */}}
@@ -46,9 +46,9 @@
 {{- end }} {{/* if *.enable */}}
 {{- end }} {{/* if isset    */}}
 
-{{- define `front-testimonials-entry` }}
+{{- define `front-quotes-entry` }}
   {{- if or $.Site.Params.debug (findRE `\bhtml-comment\b` $.Site.Params.traceFlags) }}
-    {{ `<!-- front-testimonials-entry -->` | safeHTML }}
+    {{ `<!-- front-quotes-entry -->` | safeHTML }}
   {{- end}}
 
 {{- $ourPage      :=  index . `page`    }}

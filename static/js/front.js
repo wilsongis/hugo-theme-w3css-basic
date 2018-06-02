@@ -45,7 +45,7 @@ $('.clients-owl').owlCarousel( {
 })
 
 
-$('.testimonials-owl').owlCarousel( {
+$('.quotes-owl').owlCarousel( {
   nav:false,
   navText:[ '-', '+' ],
   dots:false,
