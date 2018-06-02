@@ -252,12 +252,6 @@ th:first-child,td:first-child{padding-left:8px}
   font-variant: small-caps;
 }
 
-#see_more_padding {
-  padding-top: 300px;
-  padding-bottom: 250px;
-
-}
-
 #see_more_background {
   background: url('../images/laszlo-bajnoczi-421096-unsplash.jpg') center top no-repeat;
 
@@ -268,6 +262,8 @@ th:first-child,td:first-child{padding-left:8px}
   background-size:       auto auto;
   background-attachment: fixed;
   background-size:       cover;
+  padding-top: 300px;
+  padding-bottom: 250px;
 }
 
 /* -------------------------------------------------- */
